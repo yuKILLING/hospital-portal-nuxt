@@ -1,6 +1,6 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  modules: ['@nuxtjs/tailwindcss', 'shadcn-nuxt', "@nuxt/image"],
+  modules: ['@nuxtjs/tailwindcss', 'shadcn-nuxt', "@nuxt/image", "@nuxt/fonts"],
   ssr: true,
   shadcn: {
     prefix: '',
@@ -26,7 +26,8 @@ export default defineNuxtConfig({
   ],
   runtimeConfig: {
     public: {
-      apiBase: process.env.API_BASE || 'https://server-production-5c9a.up.railway.app',
+      // apiBase: process.env.API_BASE || 'http://localhost:5000',
+      apiBase: process.env.API_BASE || 'https://server-production-5c9a.up.railway.app'
     },
   },
   
